@@ -1,5 +1,20 @@
 const moveBtn = document.getElementById('moveBtn');
 
+let numero = parseInt(prompt("Olá! Informe um número para gerar a tabuada:")); //Pede ao usuário que informe um número.
+
+let i; //Multiplicador
+
+if (isNaN(numero)){ //Emite uma mensagem caso o valor seja uma String
+    alert("Opa! Valor inválido! Você deve informar um número, e não um caracter.");
+} else{
+    let resultado = "Tabuada feita!" + "\n";
+    for (i = 1; i <= 10; i++){ //Estrutura de repetição da tabuada. Começa no número um, vai até o número 10, e vai incrementando
+        resultado += numero + " x " + i + " = " + (numero * i) + "\n";
+    }
+
+    alert(resultado);
+}
+/*
 // Adiciona um "ouvinte de eventos" que dispara uma função quando o mouse passa por cima
 moveBtn.addEventListener('mouseover', function() {
     // Obtém as dimensões da janela do navegador
@@ -44,3 +59,4 @@ addTextBtn.addEventListener('click', function() {
     // Adiciona o novo parágrafo como um "filho" do contêiner de texto
     textContainer.appendChild(newParagraph);
 });
+*/
