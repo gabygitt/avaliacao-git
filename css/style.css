@@ -1,0 +1,67 @@
+/* Estilo geral do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Evita barras de rolagem quando o botão se move */
+}
+
+/* Contêiner principal */
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+/* Estilo dos botões */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Estilo específico para o botão que se move */
+#moveBtn {
+    position: absolute; /* Permite que o botão seja movido livremente */
+    transition: top 0.5s ease-out, left 0.5s ease-out; /* Animação suave */
+}
+
+/* Contêiner para o texto adicionado */
+#textContainer {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-height: 100px;
+    text-align: left;
+    background-color: #fafafa;
+}
+
+.new-text {
+    background-color: #e7f3ff;
+    border-left: 4px solid #007bff;
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
